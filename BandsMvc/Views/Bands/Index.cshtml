@@ -1,0 +1,19 @@
+﻿@model BandsMvc.Models.Band[]
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<body>
+	<h2>Bands</h2
+	<span>@DateTime.Now</span>
+	  <ul>
+		@foreach (var item in Model)
+		{
+			<li><a href="detail/@item.Id">@item.Name </a></li>
+		}
+	  </ul>
+</body>
+</html>
