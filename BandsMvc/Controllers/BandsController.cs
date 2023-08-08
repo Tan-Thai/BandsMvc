@@ -24,7 +24,8 @@ namespace BandsMvc.Controllers
 		public IActionResult Detail(int id)
 		{
 			var band = dataService.GetBandById(id);
-			return Content($"ID:{band.Id}, Band:{band.Name}, Genre:{band.Description}");
+			return View(band);
+			//return Content($"ID:{band.Id}, Band:{band.Name}, Genre:{band.Description}");
 		}
 	}
 }
